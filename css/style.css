@@ -90,8 +90,8 @@ main {
 
 #cart-items {
     margin-bottom: 20px;
-    max-height: 300px; /* Limitar la altura del carrito */
-    overflow-y: auto;  /* Scroll cuando exceda la altura */
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .cart-item {
@@ -106,7 +106,7 @@ main {
 
 .cart-item p {
     margin: 0;
-    flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+    flex-grow: 1;
 }
 
 .cart-item .remove-item {

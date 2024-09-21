@@ -8,7 +8,7 @@ const products = [];
 // Función para obtener productos de una API
 async function fetchProducts() {
     try {
-        const response = await fetch('products.json'); // Cambia la URL si es necesario
+        const response = await fetch('products.json');
         if (!response.ok) {
             throw new Error('Error al cargar los productos');
         }
@@ -16,7 +16,7 @@ async function fetchProducts() {
         return products;
     } catch (error) {
         console.error('Error:', error);
-        return []; // Retorna un array vacío en caso de error
+        return []; // Acá, retorna un array vacío en caso de error
     }
 }
 
@@ -25,7 +25,7 @@ async function generateProductCards() {
     const productList = document.getElementById('product-list');
     productList.innerHTML = ''; // Limpiar contenido actual
 
-    const products = await fetchProducts(); // Espera a que se obtengan los productos
+    const products = await fetchProducts(); // Espera la obtención de los productos
 
     products.forEach(product => {
         const card = document.createElement('div');
@@ -103,13 +103,13 @@ function updateCartDisplay() {
     const cartContainer = document.getElementById('cart-items');
     cartContainer.innerHTML = '';
 
-    let total = 0; // acumula el total
+    let total = 0;
 
     cartItems.forEach(item => {
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
         const itemTotal = item.price * item.quantity; // calcula el total del item
-        total += itemTotal; // suma el total del item al total general
+        total += itemTotal; // total del item + total general
         cartItem.innerHTML = `
             <p>${item.name} 
                 (x<input type="number" class="cart-quantity" value="${item.quantity}" min="0" data-id="${item.id}">) 
@@ -155,7 +155,7 @@ function updateCartItemQuantity(id, newQuantity) {
         if (newQuantity > 0) {
             cart[itemIndex].quantity = newQuantity;
         } else {
-            cart.splice(itemIndex, 1); // Eliminar del carrito si la cantidad es cero
+            cart.splice(itemIndex, 1);
         }
     }
 
@@ -211,7 +211,6 @@ function checkout() {
     }
 }).then((result) => {
     if (result.isConfirmed) {
-        // Aquí puedes manejar los datos del usuario como desees
         Swal.fire({
             title: "¡Compra exitosa!",
             text: "¡Gracias por su preferencia, que lo disfrutes!",
@@ -235,7 +234,7 @@ function resetQuantities() {
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', () => {
-    generateProductCards(); // Llama a la función para generar productos
+    generateProductCards();
     updateCartDisplay();
 
     let timerInterval;
