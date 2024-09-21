@@ -178,8 +178,8 @@ function checkout() {
     if (cartItems.length === 0) {
         Swal.fire({
             icon: "error",
-            title: "Oops...",
-            text: "Tu carrito aún está vacío!",
+            title: "Oops... ¡Tu carrito está vacío!",
+            text: "Añade tu pedido para continuar",
         });
         return;
     }
