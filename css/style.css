@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #979595;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card h3,
+.product-card p {
+    margin: 0 0 10px;
+}
+
+.product-card .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card .quantity-controls button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.product-card .quantity-controls button:hover {
+    background-color: #ccc;
+}
+
+.product-card .add-to-cart {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+#cart {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cart h2 {
+    margin-bottom: 15px;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+    max-height: 300px; /* Limitar la altura del carrito */
+    overflow-y: auto;  /* Scroll cuando exceda la altura */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.cart-item p {
+    margin: 0;
+    flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+}
+
+.cart-item .remove-item {
+    background-color: #ff5f6d;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cart-item .remove-item:hover {
+    background-color: #e53e3e;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#checkout-btn {
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+#checkout-btn:hover {
+    background-color: #218838;
+}
+
+.checkout-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 14px;
+    margin: 0;
+}

@@ -1,0 +1,14 @@
+[
+    { "id": 1, "name": "Hamburguesa", "description": "Hamburguesa completa, con jyq, cebolla, huevo, tomate y lechuga", "price": 7500 },
+    { "id": 2, "name": "Pizza", "description": "Pizza especial de la casa con pepperoni", "price": 9700 },
+    { "id": 3, "name": "Ensalada", "description": "Ensalada fresca con productos seleccionados de la huerta", "price": 8000 },
+    { "id": 4, "name": "Sushi", "description": "Sushi variado con 6 tipos de salsa distintas", "price": 12000 },
+    { "id": 5, "name": "Tacos", "description": "Tacos de carne vacuna, con toque de salsa picante", "price": 9000 },
+    { "id": 6, "name": "Pasta", "description": "Pasta con salsa al dente, especial de la casa", "price": 8900 },
+    { "id": 7, "name": "Sopa", "description": "Sopa de pollo casera con verduras propias", "price": 7000 },
+    { "id": 8, "name": "Burrito", "description": "Burrito con frijoles y carne desmenuzada a la mostaza", "price": 9150 },
+    { "id": 9, "name": "Brownie", "description": "Brownie de chocolate acompañado de crema americana", "price": 4000 },
+    { "id": 10, "name": "Galletas", "description": "Galletas de avena con pasas de uva o chips de chocolate", "price": 3500 },
+    { "id": 11, "name": "Smoothie", "description": "Smoothie de frutas de la temporada a elección", "price": 4400 },
+    { "id": 12, "name": "Wrap", "description": "Wrap de pollo y vegetales seleccionados por el cliente", "price": 5860 }
+]
